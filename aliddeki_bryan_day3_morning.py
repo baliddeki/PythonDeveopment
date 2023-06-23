@@ -149,31 +149,62 @@ print(a >> 2)
 
 #adding logic
 def add():
-    a = float(num_input1.get())
-    b = float(num_input2.get())
-    result = a + b
-    messagebox.showinfo("Result", str(result))
+   
+    try:
+            if num_input1.get() == "" or num_input2.get() == "":
+                messagebox.showerror("Error", "One of the entries is empty")
+            else:
+                 a = float(num_input1.get())
+                 b = float(num_input2.get())
+                 result = a + b
+                 messagebox.showinfo("Result", (result))            
+    except AttributeError:
+        messagebox.showerror("Error", "Please numbers to operate on")
 
 #subtracting logic
 def subtract():
-    a = float(num_input1.get())
-    b = float(num_input2.get())
-    result = a - b
-    messagebox.showinfo("Result", str(result))
+    
+    try:
+            if num_input1.get() == "" or num_input2.get() == "":
+                messagebox.showerror("Error", "One of the entries is empty")
+            else:
+                 a = float(num_input1.get())
+                 b = float(num_input2.get())
+            result = a - b
+            messagebox.showinfo("Result", (result))
+    except AttributeError:
+        messagebox.showerror("Error", "Please numbers to operate on")
 
 #multiplying logic
 def multiply():
-    a = float(num_input1.get())
-    b = float(num_input2.get())
-    result = a * b
-    messagebox.showinfo("Result", str(result))
+    try:
+            if num_input1.get() == "" or num_input2.get() == "":
+                messagebox.showerror("Error", "One of the entries is empty")
+            else:
+                 a = float(num_input1.get())
+                 b = float(num_input2.get())
+            result = a * b
+            messagebox.showinfo("Result", (result))
+    except AttributeError:
+        messagebox.showerror("Error", "Please numbers to operate on")
+    
 
 #dividing logic
 def divide():
-    a = float(num_input1.get())
-    b = float(num_input2.get())
-    result = a / b
-    messagebox.showinfo("Result", str(result))
+    
+    try:
+           if num_input1.get() == "" or num_input2.get() == "":
+                messagebox.showerror("Error", "One of the entries is empty")
+           else:
+            a = float(num_input1.get())
+            b = float(num_input2.get())
+            if b == 0:
+                messagebox.showerror("Error", "Cannot divide by zero")
+            else:
+                result = a / b
+            messagebox.showinfo("Result", str(result))
+    except AttributeError:
+        messagebox.showerror("Error", "Please numbers to operate on")
 
 #Creating Calculator GUI
 #Creating a window
@@ -211,6 +242,7 @@ multiply_button.grid(row=3, column=2, padx=10, pady=10)
 divide_button.grid(row=3, column=3, padx=10, pady=10)
 
 cal_window.mainloop()
+
 
 
 
