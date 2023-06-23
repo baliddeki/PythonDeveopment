@@ -233,6 +233,68 @@ Shoes.update({"type": "sneakers"})
 print("The new dictionary is", Shoes)
 print("----------------------------------")
 
+#4
+for key in Shoes:
+    print(key)
+print("----------------------------------")
+
+#5
+for value in Shoes:
+    print(Shoes[value])
+print("----------------------------------")
+
+#6
+for key in Shoes:
+    if key == "type":
+        print("Yes, 'type' is one of the keys in the Shoes dictionary")
+print("----------------------------------")
+
+#7
+for key, value in Shoes.items():
+    print(key, value)
+print("----------------------------------")
+
+#8
+Shoes.pop("color")
+print("The new dictionary is", Shoes)
+print("----------------------------------")
+
+#9
+empty_dicitionary = Shoes.clear()
+print("The new dictionary is", empty_dicitionary)
+print("----------------------------------")
+
+#10
+my_shoes = {
+    "brand": "Nick",
+    "color": "black",
+    "size": 40,
+}
+my_shoes_copy = my_shoes.copy()
+print("The copied dictionary is", my_shoes_copy)
+print("----------------------------------")
+
+#11
+student_marks = {"Jonah": {"Maths": 90, "English": 80, "Science": 70},
+                 "Kirabo": {"Maths": 85, "English": 75, "Science": 65},
+                    "Ali": {"Maths": 73, "English": 63, "Science": 53},
+                    "Moses": {"Maths": 61, "English": 51, "Science": 41},
+                    "Hadijjah": {"Maths": 43, "English": 33, "Science": 23},
+                    "Simon": {"Maths": 80, "English": 70, "Science": 60}
+                    }
+
+for key, value in student_marks.items():
+    for subject, subj_score in student_marks[key].items():
+        if subject == "Maths":
+            print("In Maths,", key, "has a score of: ", student_marks[key]["Maths"])
+        elif subject == "English":
+            print("In English,", key, "has a score of: ", student_marks[key]["English"])
+        else:
+            print("In Science,", key, "has a score of: ", student_marks[key]["Science"])
+
+print("--------------------------------------------")
+
+
 
 
 
