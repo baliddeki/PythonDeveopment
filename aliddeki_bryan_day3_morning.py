@@ -45,3 +45,34 @@ print(10-3)
 print(10+3)
 a = 5
 print(a)
+
+#Comparison Operators
+a = 23.5
+b = 15
+c = 9
+
+#Greater than
+if (a > b):
+    print("a is greater than b")
+
+#Less than
+if (c < a):
+    print("c is less than a")
+
+#Greater than or equal to
+if (a >= b):
+    print("a is greater than or equal to b")
+
+#Less than or equal to
+if (c <= a):
+    print("c is less than or equal to a")
+
+#Equal to
+if (a == b):
+    print("a is equal to b")
+
+#Not equal to
+if (a != b):
+    print("a is not equal to b")
+
+
