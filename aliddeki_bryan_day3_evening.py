@@ -181,4 +181,60 @@ print("The joined set is", joined_set)
 print("----------------------------------")
 
 
+#Exercise4: Strings
+#1
+var_int = 5
+var_str = "John"
+print("the concatenation gives us", str(var_int) +" "+ var_str)
+print("----------------------------------")
+
+#2
+txt = "     Hello,     Uganda!     "
+stripped_txt = txt.replace("     ", " ").strip()
+print("The stripped string is", stripped_txt)
+print("----------------------------------")
+
+#3
+print("txt to uppercase is ", stripped_txt.upper())
+print("----------------------------------")
+
+#4
+stripped_txt.replace("U", "V")
+print("The new string is", stripped_txt)
+print("----------------------------------")
+
+#5
+y = "I am proudly Ugandan"
+print("Range of characters in the 3rd and 4th position are",y[2:4])
+print("----------------------------------")
+
+#6
+x ='All "Data Scientists" are cool!'
+print("The corrected string is", x)
+
+
+#Exercise5: Dictionaries
+#1
+Shoes = {
+    "brand": "Nick",
+    "color": "black",
+    "size": 40,
+}
+print("Shoe size is ", Shoes["size"])
+print("----------------------------------")
+
+#2
+Shoes["brand"] = "Adidas"
+print("The new brand is", Shoes["brand"])
+print("----------------------------------")
+
+#3
+Shoes.update({"type": "sneakers"})
+print("The new dictionary is", Shoes)
+print("----------------------------------")
+
+
+
+
+
 
