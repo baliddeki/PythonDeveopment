@@ -151,14 +151,34 @@ favorite_beverages.add("water")
 print("My favorite beverages now are", favorite_beverages)
 
 #3
+mySet = {"oven", "kettle", "microwave", "refrigerator"}
+if "microwave" in mySet:
+    print("Yes, 'microwave' is in the set")
+print("----------------------------------")
 
+#4
+mySet.remove("kettle")
+print("The new set is", mySet)
+print("----------------------------------")
 
-        
+#5
+for kitchen_appliance in mySet:
+    print(kitchen_appliance)
+print("----------------------------------")
 
+#6
+set_4 = {"pen", 1, "pencil", 2}
+list_2 =[3, "eraser"]
+set_4.update(list_2)
+print("The new set is", set_4)
+print("----------------------------------")
 
-
-
-
+#7
+age_set = {13, 24, 27, 32, 40}
+name_set = {"Bryan", "Reagan", "Ashiraf,", "Benard", "Francis"}
+joined_set = age_set.union(name_set)
+print("The joined set is", joined_set)
+print("----------------------------------")
 
 
 
