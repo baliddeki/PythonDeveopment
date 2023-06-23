@@ -33,7 +33,7 @@ Identity Operators
 Is: 'is' operator: checks if two values are not the same
 """
 
-"""
+
 
 
 
@@ -104,7 +104,7 @@ x = 10
 y = 10
 
 print(x != y)
-"""""""""
+
 
 """
 Bitwise AND ('&'): performs bitwise AND operation between the correspoding bits of two operands
@@ -113,6 +113,7 @@ Bitwise XOR ('^'): performs bitwise XOR operation between the correspoding bits 
 Bitwise NOT ('~'): performs bitwise NOT operation on a single operand
 Bitwise left shift ('<<'): performs bitwise left shift operation on a single operand
 Bitwise right shift ('>>'): performs bitwise right shift operation on a single operand
+"""
 
 
 #Examples on Bitwise Operators
@@ -140,7 +141,7 @@ print(a >> 2)
 #Simple Calculator application
 
 #tkinter learn
-"""
+
 
 #Assignment: create a simple calculator program with a GUI interface.
 #Make your title of the calculator program with window with your name eg 'AliBryan' simple calculator
