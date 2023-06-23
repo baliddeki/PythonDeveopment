@@ -150,6 +150,9 @@ favorite_beverages.add("coffee")
 favorite_beverages.add("water")
 print("My favorite beverages now are", favorite_beverages)
 
+#3
+
+
         
 
 
